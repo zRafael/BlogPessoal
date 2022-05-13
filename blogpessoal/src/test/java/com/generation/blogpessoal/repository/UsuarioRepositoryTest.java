@@ -37,6 +37,8 @@ public class UsuarioRepositoryTest {
 		assertTrue(usuario.get().getUsuario().equals("rafael@gmail.com"));
 	}
 	
+	
+	
 	@AfterAll
 	public void end() {
 		repository.deleteAll();
