@@ -1,4 +1,4 @@
-package com.generation.blogpessoal.security;
+package com.generation.blogpessoal.service;
 
 import java.nio.charset.Charset;
 import java.util.Optional;
