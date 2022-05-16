@@ -1,6 +1,8 @@
 package com.generation.blogpessoal.repository;
 
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 import java.util.Optional;
 
@@ -25,9 +27,9 @@ public class UsuarioRepositoryTest {
 	
 	@BeforeAll
 	void start () {
-		repository.save(new Usuario(0L, "Rafael", "rafael@gmail.com", "rafa1234", "https://i.imgur.com/FETvs2O.jpg"));
-		repository.save(new Usuario(0L, "Michael", "michael@gmail.com", "michael1234", "https://i.imgur.com/FETvs2O.jpg"));
-		repository.save(new Usuario(0L, "Melissa", "melissa@gmail.com", "melissa", "https://i.imgur.com/FETvs2O.jpg"));
+		repository.save(new Usuario(0L, "Rafael da Silva", "rafael@gmail.com", "rafa1234", "https://i.imgur.com/FETvs2O.jpg"));
+		repository.save(new Usuario(0L, "Michael da Silva", "michael@gmail.com", "michael1234", "https://i.imgur.com/FETvs2O.jpg"));
+		repository.save(new Usuario(0L, "Melissa da Silva", "melissa@gmail.com", "melissa", "https://i.imgur.com/FETvs2O.jpg"));
 	}
 	
 	@Test
@@ -36,8 +38,6 @@ public class UsuarioRepositoryTest {
 		Optional<Usuario> usuario = repository.findByUsuario("rafael@gmail.com");
 		assertTrue(usuario.get().getUsuario().equals("rafael@gmail.com"));
 	}
-	
-	
 	
 	@AfterAll
 	public void end() {
