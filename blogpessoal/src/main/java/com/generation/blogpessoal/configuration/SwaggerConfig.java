@@ -24,7 +24,7 @@ public class SwaggerConfig {
 						.license(new License().name("Generation Brasil").url("https://github.com/zRafael"))
 						.contact(new Contact().name("Contato GitHub").url("https://github.com/zRafael")
 								.email("rafaeldecampossilva@gmail.com")))
-				.externalDocs(new ExternalDocumentation().description("Github").url("https://github.com/zRafael"));
+				.externalDocs(new ExternalDocumentation().description("Github").url("https://github.com/zRafael/BlogPessoalProjeto"));
 
 	}
 
