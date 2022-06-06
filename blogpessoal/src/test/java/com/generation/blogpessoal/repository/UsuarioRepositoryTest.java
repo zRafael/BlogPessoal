@@ -27,9 +27,9 @@ public class UsuarioRepositoryTest {
 	
 	@BeforeAll
 	void start () {
-		repository.save(new Usuario(0L, "Rafael da Silva", "rafael@gmail.com", "rafa1234", "https://i.imgur.com/FETvs2O.jpg"));
-		repository.save(new Usuario(0L, "Michael da Silva", "michael@gmail.com", "michael1234", "https://i.imgur.com/FETvs2O.jpg"));
-		repository.save(new Usuario(0L, "Melissa da Silva", "melissa@gmail.com", "melissa", "https://i.imgur.com/FETvs2O.jpg"));
+		repository.save(new Usuario(0L, "Rafael da Silva", "rafael@gmail.com", "rafa1234", "https://i.imgur.com/FETvs2O.jpg", "Normal"));
+		repository.save(new Usuario(0L, "Michael da Silva", "michael@gmail.com", "michael1234", "https://i.imgur.com/FETvs2O.jpg", "Normal"));
+		repository.save(new Usuario(0L, "Melissa da Silva", "melissa@gmail.com", "melissa", "https://i.imgur.com/FETvs2O.jpg", "Normal"));
 	}
 	
 	@Test
@@ -44,3 +44,5 @@ public class UsuarioRepositoryTest {
 		repository.deleteAll();
 	}
 }
+
+
